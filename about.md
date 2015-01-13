@@ -4,12 +4,12 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
-
-### More Information
-
-A place to include any other types of information that you'd like to include about yourself. 
+I am a software engineer with just about 20 years in the industry. I know alot 
+of different technologies and have designed and developed small websites all 
+the way up to large global enterprise applications. I get a kick out of all 
+this stuff, seriously technology and software are cool and they just keep 
+getting better.
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+[evan.e.freeman@gmail.com](mailto:evan.e.freeman@gmail.com)
