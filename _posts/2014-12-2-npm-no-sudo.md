@@ -9,11 +9,13 @@ Running everything as root is both tedious and not a good idea. So let's fix our
 
 2. Add this line, substituting the location of your home directory for mine, of course:
 
-        prefix = /Users/boutell/npm
+        prefix = /Users/freeman/npm
 
 3. Create that folder:
 
         mkdir ~/npm
+
+        sudo chown -R $USER ~/npm
 
     Now npm will install and look for things in ~/npm/bin (the ~ stands for your home directory) rather than in a global folder that only root can write to. You have your own personal npm, and you can run "npm link" without root privileges.
 
