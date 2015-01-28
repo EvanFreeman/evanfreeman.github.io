@@ -154,10 +154,6 @@ img {
 
 .masthead {
   padding: 20px 0;
-  
-  @include mobile {
-    text-align: center;
-  }
 }
 
 .site-avatar {
@@ -167,7 +163,6 @@ img {
   margin-right: 15px;
 
   @include mobile {
-    float: none;
     display: block;
     margin: 0 auto;
   }
@@ -274,6 +269,7 @@ nav {
 .post-date {
   font-size: 14px;
   margin: 0 0 15px 0;
+  border-bottom: 1px solid #333;
 }
 
 .wrapper-footer {

@@ -6,10 +6,11 @@ layout: default
   {% for post in site.posts %}
     <article class="post">    
       
+    
+    <p class="post-date">{{ post.date | date: '%B %-d, %Y' }}</p>
     <h2 class="listing">
       <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
     </h2>
-    <p class="post-date">{{ post.date | date: '%Y-%m-%d' }}</p>
 
     <div class="entry">
       {{ post.content | truncatewords:20}}
