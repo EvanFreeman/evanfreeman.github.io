@@ -19,10 +19,7 @@ html {
 
 body {
 	background: $white;
-  font: 14px/1.4 $lato;
-  ne-height: 1.4;
-  color: #333;
-  text-shadow: 0 1px 0 rgba(255,255,255,1.0);
+  font: 18px/1.4 $helvetica;
   color: $darkGray;
 }
 
@@ -34,12 +31,12 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: $lato;
+  font-family: $helveticaNeue;
   color: $darkerGray;
-  font-weight: lighter;
+  font-weight: bold;
   
   line-height: 1.7;
-  margin: -5px 0 -15 0;
+  margin: 1em 0 15px;
   padding: 0;
 
   @include mobile {
@@ -55,20 +52,20 @@ h1 {
 }
 
 h2 {  
-  font-size: 21px;
+  font-size: 24px;
 }
 
 h3 {  
-  font-size: 18px;
+  font-size: 20px;
 }
 
 h4 {  
-  font-size: 16px;
+  font-size: 18px;
   color: $gray;
 }
 
 p {
-  margin: 1em 0;
+  margin: 15px 0;
 }
 
 a {
@@ -149,11 +146,17 @@ img {
 //
 
 .wrapper-masthead {
-  margin-bottom: 0px;
+  background: $lightGray;
+  margin-bottom: 50px;
 }
 
 .masthead {
   padding: 20px 0;
+  border-bottom: 1px solid $lightGray;
+  
+  @include mobile {
+    text-align: center;
+  }
 }
 
 .site-avatar {
@@ -163,6 +166,7 @@ img {
   margin-right: 15px;
 
   @include mobile {
+    float: none;
     display: block;
     margin: 0 auto;
   }
@@ -186,7 +190,7 @@ img {
   margin: 0;
   color: $darkGray;
   cursor: pointer;
-  font-family: $lato; 
+  font-family: $helveticaNeue; 
   font-weight: 300;
   font-size: 28px;
   letter-spacing: 1px;
@@ -205,7 +209,7 @@ img {
 nav {
   float: right;
   margin-top: 23px; // @TODO: Vertically middle align
-  font-family: $lato; 
+  font-family: $helveticaNeue; 
   font-size: 18px;
   
   @include mobile {
@@ -232,13 +236,10 @@ nav {
 //
 // .main
 //
-.listing h2 {
-  margin: 40px 0 0 0;
-}
 
 .posts > .post {
-  padding-top:1em;
-  padding-bottom: 1em;
+  margin-bottom: 2em;
+  border-bottom: 1px solid $lightGray;
 }
 
 .posts > .post:last-child {
@@ -252,7 +253,7 @@ nav {
     border-left: 2px solid $gray;
     padding: 0.1em 1em;
     color: $gray;
-    font-size: 17px;
+    font-size: 22px;
     font-style: italic;
   }
 
@@ -267,9 +268,7 @@ nav {
 }
 
 .post-date {
-  font-size: 14px;
-  margin: 0 0 15px 0;
-  border-bottom: 1px solid #333;
+  margin: -25px  0;
 }
 
 .wrapper-footer {
