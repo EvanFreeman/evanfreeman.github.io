@@ -2,20 +2,19 @@
 layout: default
 ---
 
-<div class="posts">
-  {% for post in site.posts %}
-    <article class="post">    
-      
-    
-    <p class="post-date">{{ post.date | date: '%B %-d, %Y' }}</p>
-    <h2 class="listing">
-      <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
-    </h2>
+<div class="home">
 
-    <div class="entry">
-      {{ post.content | truncatewords:20}}
-    </div>
-      
-    </article>
-  {% endfor %}
+  <ul class="post-list">
+    {% for post in site.posts %}
+      <li>
+        <span class="post-meta">{{ post.date | date: "%d %B %Y" }}</span>
+
+        <h2>
+          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        </h2>
+        {{ post.content | strip_html | truncatewords: 75, '...' }}
+      </li>
+    {% endfor %}
+  </ul>
+
 </div>
