@@ -1,203 +1,337 @@
-/**
- * Reset some basic elements
- */
-body, h1, h2, h3, h4, h5, h6,
-p, blockquote, pre, hr,
-dl, dd, ol, ul, figure {
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video {
     margin: 0;
     padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline
 }
 
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {
+    display: block
+}
 
-
-/**
- * Basic styling
- */
 body {
-    font-family: $base-font-family;
-    font-size: $base-font-size;
-    line-height: $base-line-height;
-    font-weight: 300;
-    color: $text-color;
-    background-color: $background-color;
-    -webkit-text-size-adjust: 100%;
+    line-height: 1
 }
 
-
-
-/**
- * Set `margin-bottom` to maintain vertical rhythm
- */
-h1, h2, h3, h4, h5, h6,
-p, blockquote, pre,
-ul, ol, dl, figure,
-%vertical-rhythm {
-    margin-bottom: $spacing-unit / 2;
+ol,ul {
+    list-style: none
 }
 
-
-
-/**
- * Images
- */
-img {
-    max-width: 100%;
-    vertical-align: middle;
+blockquote,q {
+    quotes: none
 }
 
+blockquote:before,blockquote:after,q:before,q:after {
+    content: '';
+    content: none
+}
 
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
 
-/**
- * Figures
- */
-figure > img {
+html {
+    box-sizing: border-box
+}
+
+*,*::after,*::before {
+    box-sizing: inherit
+}
+
+.container {
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.container::after {
+    clear: both;
+    content: "";
+    display: table
+}
+
+ .social-networks li {
+        float:left;
+        display: block;
+}
+
+@media screen and (max-width: 5000px) and (min-width: 641px) {
+    .social-networks li {
+        margin-right: 2.35765%;
+        width: 31.76157%;
+    }
+
+    .social-networks li:last-child {
+        margin-right: 0;
+    }
+
+    .social-networks li:nth-child(3n) {
+        margin-right: 0;
+    }
+
+    .social-networks li:nth-child(3n+1) {
+        clear: left;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .social-networks li {
+        margin-right: 2.35765%;
+        width: 31.76157%
+    }
+
+    .social-networks li:last-child {
+        margin-right: 0;
+    }
+
+    .social-networks li:nth-child(3n) {
+        margin-right: 0;
+    }
+
+    .social-networks li:nth-child(3n+1) {
+        clear: left;
+    }
+}
+
+header, .social-networks, footer {
     display: block;
 }
 
-figcaption {
-    font-size: $small-font-size;
+header::after,.social-networks::after,footer::after {
+    clear: both;
+    content: "";
+    display: table;
 }
 
-
-
-/**
- * Lists
- */
-ul, ol {
-    margin-left: $spacing-unit;
+.posts {
+    display: block;
 }
 
-li {
-    > ul,
-    > ol {
-         margin-bottom: 0;
+.posts::after {
+    clear: both;
+    content: "";
+    display: table
+}
+
+.posts li {
+    display: block
+}
+
+.posts li::after {
+    clear: both;
+    content: "";
+    display: table
+}
+
+@media screen and (max-width: 5000px) and (min-width: 641px) {
+    .posts li time {
+        float:left;
+        display: block;
+        margin-right: 7.42297%;
+        width: 19.43277%
+    }
+
+    .posts li time:last-child {
+        margin-right: 0
+    }
+
+    .posts li a {
+        float: left;
+        display: block;
+        margin-right: 7.42297%;
+        width: 73.14426%
+    }
+
+    .posts li a:last-child {
+        margin-right: 0
     }
 }
 
+@media screen and (max-width: 640px) {
+    .posts li time {
+        float:left;
+        display: block;
+        margin-right: 5.85151%;
+        width: 15.3188%
+    }
 
+    .posts li time:last-child {
+        margin-right: 0
+    }
 
-/**
- * Headings
- */
-h1, h2, h3, h4, h5, h6 {
-    font-weight: 300;
+    .posts li a {
+        float: left;
+        display: block;
+        margin-right: 5.85151%;
+        width: 78.8297%
+    }
+
+    .posts li a:last-child {
+        margin-right: 0
+    }
 }
 
+body {
+    background-color: #ad41ad;
+    color: #fff;
+    font: 300 14pt/1.4em "Vollkorn",sans-serif
+}
 
+h1,h2,h3,h4 {
+    font-family: "Ubuntu",serif
+}
 
-/**
- * Links
- */
-a {
-    color: $brand-color;
+.container {
+    margin-bottom: 1em;
+    margin-top: 2em
+}
+
+@media screen and (max-width: 640px) {
+    .container {
+        margin-top:1.2em
+    }
+}
+
+header {
+    margin-bottom: 2.5em;
+    text-align: center
+}
+
+@media screen and (max-width: 640px) {
+    header {
+        font-size:.5em
+    }
+}
+
+header h1 {
+    font-size: 5em;
+    font-variant: small-caps;
+    line-height: 1.4em
+}
+
+header h1 a {
+    color: #fff;
+    text-decoration: none
+}
+
+header h2 {
+    font: 100 1.4em "Vollkorn",sans-serif;
+    color: #fff
+}
+
+.notice {
+    background-color: #e9b600;
+    padding: .5em;
+    position: fixed;
+    text-align: center;
+    top: 0;
+    width: 100%
+}
+
+@media screen and (max-width: 640px) {
+    .notice {
+        font-size:.6em;
+        line-height: 1.5em
+    }
+}
+
+.notice,.notice a {
+    color: #695200
+}
+
+.social-networks li {
+    font-size: 1.75em;
+    margin-bottom: 1em;
+    text-align: center
+}
+
+.social-networks li span.name {
+    display: none
+}
+
+.social-networks li a {
     text-decoration: none;
-
-    &:visited {
-        color: darken($brand-color, 15%);
-    }
-
-    &:hover {
-        color: $text-color;
-    }
+    color: #fff
 }
 
-
-
-/**
- * Blockquotes
- */
-blockquote {
-    color: $grey-color;
-    border-left: 4px solid $grey-color-light;
-    padding-left: $spacing-unit / 2;
-    font-size: 18px;
-    letter-spacing: -1px;
-    font-style: italic;
-
-    > :last-child {
-        margin-bottom: 0;
+@media screen and (max-width: 640px) {
+    .social-networks li {
+        font-size:1.25em
     }
 }
 
-
-
-/**
- * Code formatting
- */
-pre,
-code {
-    font-size: 15px;
-    border: 1px solid $grey-color-light;
-    border-radius: 3px;
-    background-color: #eef;
+footer {
+    opacity: 0.6;
+    text-align: center
 }
 
-code {
-    padding: 1px 5px;
-}
-
-pre {
-    padding: 8px 12px;
-    overflow-x: scroll;
-
-    > code {
-        border: 0;
-        padding-right: 0;
-        padding-left: 0;
+@media screen and (max-width: 640px) {
+    footer {
+        font-size:.6em
     }
 }
 
+[data-icon]:before {
+    font-family: 'icomoon';
+    content: attr(data-icon);
+    speak: none;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased
+}
 
+.posts li {
+    margin-bottom: 1em
+}
 
-/**
- * Wrapper
- */
-.wrapper {
-    max-width: -webkit-calc(800px - (#{$spacing-unit} * 2));
-    max-width:         calc(800px - (#{$spacing-unit} * 2));
-    margin-right: auto;
-    margin-left: auto;
-    padding-right: $spacing-unit;
-    padding-left: $spacing-unit;
-    @extend %clearfix;
-
-    @include media-query($on-laptop) {
-        max-width: -webkit-calc(800px - (#{$spacing-unit}));
-        max-width:         calc(800px - (#{$spacing-unit}));
-        padding-right: $spacing-unit / 2;
-        padding-left: $spacing-unit / 2;
+@media screen and (max-width: 640px) {
+    .posts li {
+        padding:0 1em
     }
 }
 
+.posts li time {
+    opacity: 0.6;
+    text-align: right
+}
 
-
-/**
- * Clearfix
- */
-%clearfix {
-
-    &:after {
-        content: "";
-        display: table;
-        clear: both;
+@media screen and (max-width: 640px) {
+    .posts li time {
+        margin-top:.2em;
+        font-size: .7em;
+        line-height: 1.4em
     }
 }
 
+.posts li a {
+    color: #fff
+}
 
-
-/**
- * Icons
- */
-.icon {
-
-    > svg {
-        display: inline-block;
-        width: 16px;
-        height: 16px;
-        vertical-align: middle;
-
-        path {
-            fill: $grey-color;
-        }
+@media screen and (max-width: 640px) {
+    article {
+        font-size:.8em;
+        padding: 0 1em
     }
+}
+
+article a {
+    color: #fff
+}
+
+article h1 {
+    font-size: 2.5em
+}
+
+article p {
+    margin-bottom: 1em
+}
+
+article code {
+    font-size: .9em;
+    font-family: "Droid Sans Mono",monospace
 }

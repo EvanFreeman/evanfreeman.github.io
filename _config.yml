@@ -4,8 +4,12 @@ email: evan.e.freeman@gmail.com
 description:  # this means to ignore newlines until "baseurl:"
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://evanfreeman.me" # the base hostname & protocol for your site
+
 twitter_username: codeundrum
 github_username:  evanfreeman
+linkedin_username: evanfreeman
+google_plus_username: +evanfreeman 
+
 
 # Build settings
 markdown: kramdown

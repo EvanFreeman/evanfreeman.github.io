@@ -2,19 +2,42 @@
 layout: default
 ---
 
-<div class="home">
-
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%d %B %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-        {{ post.content | strip_html | truncatewords: 75, '...' }}
-      </li>
-    {% endfor %}
+<section class="social-networks">
+  <ul>
+    <li>
+      <a href="https://github.com/{{ site.github_username }}">
+        <i class="fa fa-fw fa-3x fa-inverse fa-github"></i>
+      </a>
+    </li>
+    <li>  
+      <a href="https://plus.google.com/{{ site.google_plus_username }}">
+        <i class="fa fa-fw fa-3x fa-inverse fa-google-plus"></i>
+      </a>
+    </li>
+    <li>
+      <a href="https://www.linkedin.com/in/evanfreeman">
+        <i class="fa fa-fw fa-3x fa-inverse fa-linkedin"></i>
+      </a>
+    </li>
+    <li> <a href="http://stackexchange.com/users/4376675/evan-freeman">
+        <i class="fa fa-fw fa-3x fa-inverse fa-stack-exchange"></i>
+      </a>
+    </li>
+    <li>
+      <a href="http://stackoverflow.com/users/3569533/evan-freeman">
+        <i class="fa fa-fw fa-3x fa-inverse fa-stack-overflow"></i>
+      </a>
+    </li>
+    <li> <a href="https://twitter.com/{{ site.twitter_username }}">
+        <i class="fa fa-fw fa-3x fa-inverse fa-twitter"></i>
+      </a>
+    </li>
   </ul>
-
-</div>
+</section>
+<section>
+  <ul>
+    <li>
+      <i class="fa fa-fw fa-3x fa-inverse fa-hand-o-left" aria-hidden="true"></i>
+    </li>
+  </ul>
+</section>
