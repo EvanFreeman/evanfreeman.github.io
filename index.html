@@ -11,7 +11,7 @@ layout: default
         <span class="icon icon-ios-arrow-thin-right"></span>
       </h5>
     </a>
-    <p> {{ post.content | strip_html | truncatewords:75}}</p>
+    <p> {{ post.content | strip_html | truncatewords:15}}</p>
     <div class="article-list-footer">
       <span class="article-list-date">
         {{ post.date | date: "%B %-d, %Y" }}
