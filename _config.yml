@@ -11,7 +11,7 @@ google_plus_username: evanfreeman
 # Build settings
 markdown: kramdown
 markdown_ext: "md"
-gems:
+plugins:
   - jekyll-assets
   - jekyll-paginate
   - jekyll-sitemap
