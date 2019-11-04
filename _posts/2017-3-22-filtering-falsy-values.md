@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Filtering falsy values
+description: How to quickly discard falsy values from an array
 ---
 
 How to quickly discard falsy values from an array? Thanks to
