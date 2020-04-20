@@ -1,8 +1,7 @@
 ---
 layout: post
 title: Don't set the state if an old promise resolves. 
-description: Easy way to make sure you don't set the state if promises resolve
-late
+description: Easy way to make sure you don't set the state if promises resolve late
 ---
 
 Easy way to make sure you don’t set the state if an old promise resolves when the prop changes or the component unmounts.
