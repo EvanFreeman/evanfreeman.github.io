@@ -1,8 +1,7 @@
 ---
 layout: post
 title: My new blog with Jekyll, very exciting.
-description: This is my new blog in Jekyll with the new layout and design you
-can expect great things.
+description: This is my new blog in Jekyll with the new layout and design you can expect great things.
 ---
 
 So this is the new blog since I'm not a pure windows developer any longer I thought it was time to
