@@ -10,5 +10,3 @@ as nodejs. Jekyll seemed like a great choice.
 
 I think its funny how things have gone full circle from simple html driven sites to complex data driven ones
 to a really nice blend of the two ideas. This is why I love what I do. 
-
-<a href="https://qa.superunicornninjas.com/blog/testr">Test link</a>
