@@ -2,7 +2,7 @@ title: Evan Freeman
 email: evan.e.freeman@gmail.com
 description: "Evan Freeman is a veteran software engineer at HubSpot with extensive knowledge of frontend and backend development."
 baseurl: "/" # the subpath of your site, e.g. /blog
-url: "//www.evanfreeman.me" # the base hostname & protocol for your site
+url: "https://www.evanfreeman.me" # the base hostname & protocol for your site
 paginate: 25
 paginate_path: "/posts/page/:num/"
 twitter_username: codeundrum
